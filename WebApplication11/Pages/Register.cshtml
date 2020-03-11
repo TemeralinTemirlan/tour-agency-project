@@ -1,0 +1,27 @@
+﻿@page
+@model WebApplication11.RegisterModel
+@{
+    ViewData["Title"] = "Registration";
+}
+
+    <div>
+        <div id="registration">
+            @ViewData["Message"]
+            <h3>@ViewData["Title"]</h3>
+            <form action="" method="post">
+                Login<br /><input type="text" name="name" value="" maxlength="12"/><br />
+                Password<br /><input type="password" name="pass" value="" maxlength="14"/><br />
+                Country<br /><input type="text" name="country" value="" maxlength="16"/><br />
+                Age<br /><input type="text" name="age" value="" maxlength="3"/><br />
+                <button id="register">Registration</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        #registration{
+            height:510px;
+        }
+        #footer{
+            top:583px;
+        }
+    </style>

@@ -1,0 +1,28 @@
+﻿@page
+@model WebApplication11.LoginModel
+@{
+    ViewData["Title"] = "Login Form";
+}
+
+    <h3>@ViewData["Title"]</h3>
+    <div>
+        <div id="loginForm">
+            @ViewData["LoginMessage"]
+            @ViewData["Error"]
+            <form action="" method="post">
+                    Login<br/><input type="type" name="login" value=""  class="formLog"/><br />
+                    Password <br /><input type="password" name="pass" value=""  maxlength="12" class="formLog"/><br />
+                    <button id="loginButton">Log in</button>        
+            </form>
+        </div>
+    </div>
+    <style>
+        #loginForm{
+            height:500px;
+        }
+        #footer{
+            top:585px;
+
+        }
+    </style>
+    

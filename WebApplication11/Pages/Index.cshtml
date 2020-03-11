@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "SIS";
+}
+<!--main page-->
+<div>
+<div id="back">
+    <h1 class="title">World Wide Travel</h1>
+    <p class="headerText">We will choose the best for you</p>
+    <button class="button"><a asp-page="./Countries" id="counriesBtn">Click to find countries</a></button>
+</div>
+    </div>
+<div>
+    <div id="about">
+        <p class="title2">We have expanded the list of countries to 20!</p>
+        <p>Travels are your lifelong memories</p>
+        <img src="~/images/logo1.png" alt="">
+        <img src="~/images/logo2.png" alt="">
+        <img src="~/images/logo3.png" alt="">
+        <img src="~/images/logo4.png" alt="">
+        <div id="textImg">
+            <p class="imgText1">Sites the world</p>
+            <p class="imgText2">Shopping</p>
+            <p class="imgText3">Photography</p>
+            <p class="imgText4">Find the best</p>
+        </div>
+    </div>
+</div>
+<div>
+    <div id="comments">
+        <div id="justPadding">
+        <h3>Sam Davidson</h3>
+        <p>Best service, recommend to everyone. Rested in the Maldives at a good price. We will work with you more</p>
+        <div id="secondComment"></div>
+        <div id="thirdComment"></div>
+        <button class="button" id="btn" onclick="load()">Click to see other comments</button>
+    </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,60 @@
+﻿@page
+@model WebApplication11.CountriesModel
+@{
+    ViewData["Title"] = "Countries";
+}
+
+    <div>
+        <div id="countries">
+            <h3>@ViewData["Title"]</h3>
+            <p>Here you can find countries you can go to, use the search</p>
+            <input type="text" name="name" onkeyup="searchFunc()" id="searchC" placeholder="Search" />
+            <ul id="spisok">
+                <li><a href="" class="headerList">A</a></li>
+                <li><a href="">Andorra</a></li>
+                <li><a href="">Argentina</a></li>
+                <li><a href="">Australia</a></li>
+                <li><a href="">Azerbaijan</a></li>
+
+
+                <li><a href="" class="headerList">B</a></li>
+                <li><a href="">Bangladesh</a></li>
+                <li><a href="">Bali</a></li>
+
+
+                <li><a href="" class="headerList">C</a></li>
+                <li><a href="">Canada</a></li>
+                <li><a href="">Cameroon</a></li>
+
+                <li><a href="" class="headerList">D</a></li>
+                <li><a href="">Denmark</a></li>
+
+                <li><a href="" class="headerList">E</a></li>
+                <li><a href="">Egypt</a></li>
+                <li><a href="">Estonia</a></li>
+
+                <li><a href="" class="headerList">F</a></li>
+                <li><a href="">France</a></li>
+                <li><a href="">Fiji</a></li>
+
+                <li><a href="" class="headerList">I</a></li>
+                <li><a href="">Iceland</a></li>
+                <li><a href="">India</a></li>
+                <li><a href="">Indonesia</a></li>
+                <li><a href="">Italy</a></li>
+
+                <li><a href="" class="headerList">M</a></li>
+                <li><a href="">Mali</a></li>
+                <li><a href="">Madagaskar</a></li>
+
+                <li><a href="" class="headerList">R</a></li>
+                <li><a href="">Russia</a></li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        #footer{
+            top:1783px;
+        }
+    </style>
+
